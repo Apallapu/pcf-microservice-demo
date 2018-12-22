@@ -1,4 +1,4 @@
-# pcf-microservice-demo
+# Pcf-microservice-demo
 
 Steps to Deploy micro service in pcf
 =======================================
@@ -8,16 +8,21 @@ https://account.run.pivotal.io/z/uaa/sign-up
 
 
 step2: DownLoad and install the cli for pcf
+
 https://docs.cloudfoundry.org/cf-cli/install-go-cli.html#windows
 
 step3:cf login
-Here we have to register mail id and password
+
+Here we have to login pcf with register mail id and password
 
 step4:create service for registry
+
 $ cf create-service p-service-registry trial my-service-registry
 
 step5:create manifest file for deploy the micro service
+
 example manifest file
+
 manifest.yml
 ................
 applications:
@@ -38,7 +43,7 @@ Note:after deploying micro service in pcf,remove instance in pcf with beloe comm
 cf delete pcf-client-application
 
 
-second way of deploying micro service in pcf without manifest.yml file
+Second way of deploying micro service in pcf without manifest.yml file
 =======================================================================
 
 step1:
