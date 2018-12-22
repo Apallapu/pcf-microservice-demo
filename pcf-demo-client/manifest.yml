@@ -1,0 +1,8 @@
+applications:
+- name: pcf-client-application
+  memory: 1G
+  instances: 1
+  host: pcf-client-application
+  path: target/pcf-demo-client-0.0.1-SNAPSHOT.jar
+  services:
+    - my-service-registry
